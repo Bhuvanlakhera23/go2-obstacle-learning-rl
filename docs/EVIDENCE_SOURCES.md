@@ -2,8 +2,8 @@
 
 This portable index replaces links requiring a private workstation. It identifies
 existing documents, not new validation. Exact file identities are in
-[evidence_sources.json](provenance/evidence_sources.json) and the full
-[historical inventory](provenance/historical_inventory.json). B denotes the
+[evidence_sources.json](../provenance/evidence_sources.json) and the full
+[historical inventory](../provenance/historical_inventory.json). B denotes the
 original `artifacts/foundation02b/learning_v1_inferencefix2` data root; S the
 original experiment repository; STUDY the central research workspace.
 EXTERNAL identifiers are stable aliases for protected out-of-tree inputs.
@@ -14,7 +14,7 @@ STUDY/reports/EVIDENCE_AUDIT_V1.md; STUDY/reports/metrics.json;
 STUDY/reports/provenance.json. These establish the original matched run identities,
 raw-record reduction, detector interpretation and documented uncertainties.
 The V1 package's complete file inventory is also retained in
-[v1_files.json](provenance/v1_files.json).
+[v1_files.json](../provenance/v1_files.json).
 
 ## Comparison
 

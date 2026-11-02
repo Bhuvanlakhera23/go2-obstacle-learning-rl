@@ -9,10 +9,10 @@ adjudicated traversal evidence or an extension of the report's benchmark.
 | `fixed-mixture-stair-climb.mp4` | `Screencast from 10-22-2026 04:52:08 PM.webm` | User-confirmed Fixed-Mixture Policy |
 | `pretrained-reference-stair-attempt.mp4` | `Screencast from 10-22-2026 05:00:04 PM.webm` | User-confirmed Model5099, publicly named Pretrained Reference |
 
-The author describes a **28 cm** obstacle setup. Whether that refers to each
-riser or the total obstacle height is not documented in the supplied recording
-metadata. The clips contain no measurement/configuration record establishing
-the geometry or a cryptographic link to the report's checkpoint identities.
+The author confirms that the configured **step height is 28 cm**. This is the
+author's configuration statement, not an independently measured capability
+result. The clips do not provide independent geometry/contact measurements or
+a cryptographic link to the report's checkpoint identities.
 The recordings show selected manual demonstrations, not matched commands,
 randomizations, independent training seeds or a measured success rate. In
 particular, the comparison is with the **historical reference**, not the

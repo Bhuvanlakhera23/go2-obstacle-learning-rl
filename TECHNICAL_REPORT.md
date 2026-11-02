@@ -99,7 +99,7 @@ exposure and retention costs. Algorithms, policies, task distributions and
 evaluation criteria differ across the cited studies. No cross-paper performance
 ranking, causal mediation result or general argument against adaptive curricula
 follows. Bibliographic status and primary-source checks are documented in
-[related-work verification](RELATED_WORK_VERIFICATION.md).
+[related-work verification](docs/RELATED_WORK_VERIFICATION.md).
 
 ## 2. System and methods
 
@@ -206,7 +206,7 @@ encounters. With Wilson parameter z=1.645, a lower bound of at least 0.6 marks
 mastery and an upper bound below 0.4 removes it. The exploration component gives
 every task nonzero probability. This is a particular discrete competence-frontier
 controller, not a claim about all adaptive curricula. [S1]; exact sampler source
-is identified in Appendix A1 of [the reproducibility appendix](REPRODUCIBILITY.md).
+is identified in Appendix A1 of [the reproducibility appendix](docs/REPRODUCIBILITY.md).
 
 ### 2.5 Shared reward
 
@@ -577,20 +577,20 @@ case study with an explicit acquisition–retention boundary.
 ## Evidence and companion material
 
 All displayed numerical results trace to original records or verified audit
-outputs through [numerical provenance](NUMERICAL_PROVENANCE.md). The
-[reproducibility appendix](REPRODUCIBILITY.md) specifies offline reconstruction,
-source identities and units. The [claim–evidence–limitation matrix](CLAIM_EVIDENCE_LIMITATIONS.md),
-[missing-evidence checklist](MISSING_EVIDENCE.md) and
-[public-release checklist](PUBLIC_RELEASE_CHECKLIST.md) bound public-release
+outputs through [numerical provenance](docs/NUMERICAL_PROVENANCE.md). The
+[reproducibility appendix](docs/REPRODUCIBILITY.md) specifies offline reconstruction,
+source identities and units. The [claim–evidence–limitation matrix](docs/CLAIM_EVIDENCE_LIMITATIONS.md),
+[missing-evidence checklist](docs/MISSING_EVIDENCE.md) and
+[public-release checklist](docs/PUBLIC_RELEASE_CHECKLIST.md) bound public-release
 claims. Related-work coverage is targeted to the four verified papers below,
-not a comprehensive novelty search. The [editorial changelog](EDITORIAL_CHANGELOG.md)
+not a comprehensive novelty search. The [editorial changelog](docs/EDITORIAL_CHANGELOG.md)
 records changes from V1. Numerical data and plotting code are packaged for
 offline review; original experiment source and checkpoints are not distributed
 here. Public release of this report payload is authorized; report assets use
 CC BY 4.0 and included code uses MIT. Excluded historical artifacts are not released.
 
 Original policy identifiers and checkpoint hashes are retained in the
-[identity mapping appendix](POLICY_IDENTITY_MAPPING.md); checkpoint files are not renamed or included.
+[identity mapping appendix](docs/POLICY_IDENTITY_MAPPING.md); checkpoint files are not renamed or included.
 
 ## References
 
@@ -610,12 +610,12 @@ Original policy identifiers and checkpoint hashes are retained in the
   *Predictive Safety Curricula for Robust Legged Locomotion.* arXiv:2609.37070,
   submitted 29 September 2026. **Preprint.** [Version record][R4].
 
-[S1]: EVIDENCE_SOURCES.md#audit
-[S2]: EVIDENCE_SOURCES.md#comparison
-[S3]: EVIDENCE_SOURCES.md#publication-gate
-[S4]: EVIDENCE_SOURCES.md#prospective-gate
-[S5]: EVIDENCE_SOURCES.md#native-closure
-[S6]: EVIDENCE_SOURCES.md#export-closure
+[S1]: docs/EVIDENCE_SOURCES.md#audit
+[S2]: docs/EVIDENCE_SOURCES.md#comparison
+[S3]: docs/EVIDENCE_SOURCES.md#publication-gate
+[S4]: docs/EVIDENCE_SOURCES.md#prospective-gate
+[S5]: docs/EVIDENCE_SOURCES.md#native-closure
+[S6]: docs/EVIDENCE_SOURCES.md#export-closure
 [Ttrain]: tables/training_tasks.csv
 [Ttask]: tables/evaluation_tasks.csv
 [Tseed]: tables/high_by_evaluation_seed.csv

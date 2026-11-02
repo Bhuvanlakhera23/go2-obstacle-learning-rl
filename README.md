@@ -1,4 +1,6 @@
-# Experience Allocation and Acquisition–Retention Trade-offs in Blind Quadruped Obstacle Learning
+# Go2 Learns to Climb
+
+**Technical report:** Experience Allocation and Acquisition–Retention Trade-offs in Blind Quadruped Obstacle Learning
 
 ### A Single-Seed Quadruped Reinforcement Learning Simulation Study
 
@@ -7,7 +9,10 @@ ARK Foundation Robotics Lab, Plaksha University, India.
 
 Technical report V1.1 · version `v1.1.0` · Not a peer-reviewed conference publication.
 
-## Why experience allocation?
+## Research question
+
+**How does finite training-experience allocation affect obstacle acquisition and
+ordinary-locomotion retention in a blind Go2 policy?**
 
 A blind quadruped may spend a large training budget without acquiring difficult
 obstacle skills. This development study compares a fixed retention/ascent mixture
@@ -17,8 +22,8 @@ trained policies start from the same prior, use the same reward and receive
 
 ## Illustrative stair-climbing videos
 
-Click a preview to watch the full recording. The authors identify the setup as
-**28 cm**; its exact geometry is not independently verified from the videos.
+The configured step height in these simulation demonstrations is **28 cm**.
+The GIFs play inline; click a preview to watch the full recording.
 
 | Fixed-Mixture Policy | Pretrained Reference (historical) |
 |---|---|
@@ -30,7 +35,9 @@ illustrations**, not additional benchmark episodes, a measured 28 cm capability
 envelope or a matched evaluation. They do not establish independent contact
 ground truth or multi-seed reliability. The quantitative report below remains
 the original explicit **16–18 cm** evaluation. See [video provenance](media/README.md).
-The frozen `v1.1.0` release and its experimental records are unchanged.
+The frozen `v1.1.0` release and its experimental records are unchanged. These
+media additions and the current presentation were added later on `main`; see
+[layout and release history](docs/LAYOUT_HISTORY.md).
 
 ## Principal findings
 
@@ -48,12 +55,12 @@ locomotion costs, and adaptive-over-fixed counterexamples remain in the report.
 ## Read and reproduce
 
 - [Complete technical report](TECHNICAL_REPORT.md).
-- [CPU-only reproduction instructions](REPRODUCIBILITY.md).
-- [Policy/checkpoint identity mapping](POLICY_IDENTITY_MAPPING.md).
-- [Numerical invariance](NUMERICAL_VERIFICATION.md), [provenance](NUMERICAL_PROVENANCE.md)
+- [CPU-only reproduction instructions](docs/REPRODUCIBILITY.md).
+- [Policy/checkpoint identity mapping](docs/POLICY_IDENTITY_MAPPING.md).
+- [Numerical invariance](docs/NUMERICAL_VERIFICATION.md), [provenance](docs/NUMERICAL_PROVENANCE.md)
   and [checksum/integrity receipt](VERIFICATION.json).
-- [Related work](RELATED_WORK_VERIFICATION.md), [BibTeX references](references.bib),
-  [claims and limitations](CLAIM_EVIDENCE_LIMITATIONS.md), [missing evidence](MISSING_EVIDENCE.md).
+- [Related work](docs/RELATED_WORK_VERIFICATION.md), [BibTeX references](references.bib),
+  [claims and limitations](docs/CLAIM_EVIDENCE_LIMITATIONS.md), [missing evidence](docs/MISSING_EVIDENCE.md).
 
 | Figure | SVG | PNG |
 |---|---|---|

@@ -25,5 +25,5 @@ in the approval dossier, not hidden as a successful publisher fetch.
 All four intended publications resolve to primary identities. The targeted
 related-work argument and the distinction between the competence-frontier
 sampler, LP-ACRL and PSC remain unchanged. Machine-readable citation export is
-provided in [references.bib](references.bib). No paper PDF or third-party figure
+provided in [references.bib](../references.bib). No paper PDF or third-party figure
 is bundled, and citation verification grants no redistribution rights.

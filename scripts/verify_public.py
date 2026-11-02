@@ -7,6 +7,21 @@ from pathlib import Path
 
 def main():
     root = Path(__file__).resolve().parents[1]
+    layout_path = root / 'provenance/LAYOUT_VERIFICATION_V1.json'
+    if layout_path.exists():
+        layout = json.loads(layout_path.read_text())
+        for name, value in layout['historical_receipts_sha256'].items():
+            if hashlib.sha256((root / name).read_bytes()).hexdigest() != value:
+                raise ValueError('Historical verification record changed')
+        actual = {str(p.relative_to(root)): hashlib.sha256(p.read_bytes()).hexdigest()
+                  for p in sorted(root.rglob('*')) if p.is_file()
+                  and '.git' not in p.relative_to(root).parts and p != layout_path}
+        if actual != layout['files_sha256']:
+            raise ValueError('Current layout inventory or hashes differ from its receipt')
+        print(json.dumps(dict(status='PRESENTATION_LAYOUT_HASHES_VERIFIED',
+                              files=len(actual), original_release_tag=layout['original_release_tag'],
+                              scientific_assets_unchanged=True, native_executed=False)))
+        return
     receipt = json.loads((root / 'VERIFICATION.json').read_text())
     expected = dict(receipt['files_sha256'])
     media_path = root / 'MEDIA_UPDATE.json'

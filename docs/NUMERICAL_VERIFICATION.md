@@ -13,6 +13,6 @@ introduced. The scientific body and claim boundaries are preserved under the
 documented naming/metadata transformation.
 
 Original checkpoint/source identities remain in the [mapping appendix](POLICY_IDENTITY_MAPPING.md)
-and retained logical inventories. [VERIFICATION.json](VERIFICATION.json) records
+and retained logical inventories. [VERIFICATION.json](../VERIFICATION.json) records
 table, figure and public file hashes. RC1 remains untouched and is separately
 sealed by its original inventory. No GPU or native execution occurs.
