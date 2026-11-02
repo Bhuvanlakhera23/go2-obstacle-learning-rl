@@ -1,0 +1,66 @@
+{
+  "added_files": {
+    "media/README.md": "fe90f213c2943a34e13a06ad3bd8dc16bc2a1976ba9c024d34db0b5c7632df1f",
+    "media/fixed-mixture-stair-climb.mp4": "63306e3e890406969c3aa4f74f599bfb2e4058a58348ab4998d1958a5f29ae77",
+    "media/fixed-mixture-stair-climb.png": "ccb39d284c34bb01d200a81c5318bb26d86f32a968567c7d44439e1c405239f5",
+    "media/pretrained-reference-stair-attempt.mp4": "0e915b4d4d4e9afa568fa33e4f9f178b14fc76fdc1c671712203d773577d1b58",
+    "media/pretrained-reference-stair-attempt.png": "a25091adeddc8ac9294e41f22e32c9193822efcb9a89079c0d2e4a880b22c447"
+  },
+  "base_commit": "60ddb4a57325650add5f28d4a5be6d52ef415b7a",
+  "base_tag": "v1.1.0",
+  "base_verification_sha256": "5bf4a18ece08cc33b8e29482f31b50905ceac783b6881389796ec37b4c4b0e6d",
+  "conversion": {
+    "audio": "No source audio streams",
+    "codec": "H.264/libx264",
+    "crf": 20,
+    "filter": "fps=30,pad=ceil(iw/2)*2:ceil(ih/2)*2",
+    "frames_per_second": 30,
+    "metadata": "stripped",
+    "original_files_modified": false,
+    "preset": "fast",
+    "speed_changed": false,
+    "trimmed": false
+  },
+  "cuda_executed": false,
+  "height": "Author-reported 28 cm setup; per-riser versus total interpretation not confirmed; no independent geometry measurement",
+  "license": "Supplementary author-supplied report media: CC-BY-4.0",
+  "overrides": {
+    "README.md": {
+      "base_sha256": "51edfd5c4e53ebaa7db5dca91811b133b3ba8ab12313fba2e69f797fca12ef84",
+      "sha256": "26b9e5cc373ef46009e85633e27f5566756c381feb199e0fdcfa145315334515"
+    },
+    "scripts/verify_public.py": {
+      "base_sha256": "09afbe9c103cf683b76ae6925809dec1efe9a3b1b20a0f8cace697506ae324fb",
+      "sha256": "615eff8d4bb189f896ca1ccb628c1929898c4ba8ac8731cb5e1efb372008f1f0"
+    }
+  },
+  "recordings": [
+    {
+      "derived_duration_seconds": 111.3,
+      "derived_sha256": "63306e3e890406969c3aa4f74f599bfb2e4058a58348ab4998d1958a5f29ae77",
+      "policy_identification": "Confirmed by user in conversation",
+      "preview_source_time_seconds": 30,
+      "public_policy": "Fixed-Mixture Policy",
+      "public_video": "media/fixed-mixture-stair-climb.mp4",
+      "source_duration_seconds": 111.296298,
+      "source_filename": "Screencast from 10-22-2026 04:52:08 PM.webm",
+      "source_sha256": "74e6168b9a43005163584fda3ec6c675891bb041334a85fa2b064a7647239115"
+    },
+    {
+      "derived_duration_seconds": 75.234,
+      "derived_sha256": "0e915b4d4d4e9afa568fa33e4f9f178b14fc76fdc1c671712203d773577d1b58",
+      "policy_identification": "Confirmed by user in conversation",
+      "preview_source_time_seconds": 50,
+      "public_policy": "Pretrained Reference",
+      "public_video": "media/pretrained-reference-stair-attempt.mp4",
+      "source_duration_seconds": 75.222896,
+      "source_filename": "Screencast from 10-22-2026 05:00:04 PM.webm",
+      "source_sha256": "7097a20930685decbac290899d5f2da874101c71901d06437524b182471f167c"
+    }
+  ],
+  "release_tag_modified": false,
+  "scientific_tables_modified": false,
+  "scope": "Supplementary qualitative README videos; no change to frozen technical-report results",
+  "simulator_executed": false,
+  "zenodo_package_modified": false
+}

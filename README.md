@@ -15,6 +15,23 @@ with one specified competence-frontier sampler over the same task bank. Both
 trained policies start from the same prior, use the same reward and receive
 131,072,000 environment transitions. There is **one matched training-seed pair**.
 
+## Illustrative stair-climbing videos
+
+Click a preview to watch the full recording. The authors identify the setup as
+**28 cm**; its exact geometry is not independently verified from the videos.
+
+| Fixed-Mixture Policy | Pretrained Reference (historical) |
+|---|---|
+| [![Fixed-Mixture Policy stair-climbing demonstration](media/fixed-mixture-stair-climb.png)](media/fixed-mixture-stair-climb.mp4) | [![Pretrained Reference stair-climbing attempt](media/pretrained-reference-stair-attempt.png)](media/pretrained-reference-stair-attempt.mp4) |
+| [Watch the climbing demonstration](media/fixed-mixture-stair-climb.mp4) | [Watch the unsuccessful attempt](media/pretrained-reference-stair-attempt.mp4) |
+
+These selected, manually recorded simulation clips are **qualitative
+illustrations**, not additional benchmark episodes, a measured 28 cm capability
+envelope or a matched evaluation. They do not establish independent contact
+ground truth or multi-seed reliability. The quantitative report below remains
+the original explicit **16–18 cm** evaluation. See [video provenance](media/README.md).
+The frozen `v1.1.0` release and its experimental records are unchanged.
+
 ## Principal findings
 
 | Policy | Nominal explicit 16–18 cm detector-defined completions |
