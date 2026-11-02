@@ -27,10 +27,15 @@ timeline at 30 fps; exact compressed frame bytes differ. Source metadata is
 stripped; neither source contains an audio stream. The PNG previews are actual
 frames extracted from the corresponding recordings, not generated illustrations.
 
-The README also displays looping GIF versions of the complete MP4 timelines at
-400 pixels wide and 5 fps. They play inline, without clicking, at the original
-speed (subject to GIF frame-delay rounding). No segment is selectively trimmed.
-The full-resolution MP4 links and original static previews remain available.
+The README's looping GIFs now use the newer author-supplied MP4 files:
+`Screencast from 10-22-2026 04_52_08 PM.mp4` (Fixed-Mixture Policy, 45.55 s)
+and `Screencast from 10-22-2026 05_00_04 PM.mp4` (Pretrained Reference, 45.005 s).
+Their complete supplied timelines are converted at 400 pixels wide and 8 fps,
+with infinite looping and original playback speed (subject to GIF frame-delay
+rounding). No additional temporal trimming is applied during GIF conversion.
+These newer source files remain unchanged with the authors; their hashes are
+recorded in the provenance manifest. The linked full-resolution MP4s and static
+previews still refer to the earlier, longer recordings described above.
 
 Source/derived checksums, durations and conversion settings are recorded in
 [MEDIA_UPDATE.json](../MEDIA_UPDATE.json). The original

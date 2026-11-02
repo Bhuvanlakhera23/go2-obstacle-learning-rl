@@ -1,45 +1,55 @@
 {
   "added_files": {
-    "media/README.md": "10e143e48ae0be4fac90d3362b333f745dd40a4ce2135145d66668c3d4c6bb4f",
-    "media/fixed-mixture-stair-climb.gif": "ff9e04a88bc627222c4cba916f66b2c527a0ddd6ddb81def3d3305ce7b44771a",
+    "media/README.md": "b6816c5cb720ab8971a26ab5183c02e5c8043210531b1418c3914e2c19865626",
+    "media/fixed-mixture-stair-climb.gif": "2446d5369a72bf94ed5d60cccb54bbaba04b80c67e01c088dd99ad22451571ac",
     "media/fixed-mixture-stair-climb.mp4": "63306e3e890406969c3aa4f74f599bfb2e4058a58348ab4998d1958a5f29ae77",
     "media/fixed-mixture-stair-climb.png": "ccb39d284c34bb01d200a81c5318bb26d86f32a968567c7d44439e1c405239f5",
-    "media/pretrained-reference-stair-attempt.gif": "bf35fb7334f766d41ac12d623a776a9a9d9856d2f19ce6eef60f6abc636aadda",
+    "media/pretrained-reference-stair-attempt.gif": "c76e2a48c3c571e38382c845d736df356bcd1325eb3c97ff1cf5009295e01ad0",
     "media/pretrained-reference-stair-attempt.mp4": "0e915b4d4d4e9afa568fa33e4f9f178b14fc76fdc1c671712203d773577d1b58",
     "media/pretrained-reference-stair-attempt.png": "a25091adeddc8ac9294e41f22e32c9193822efcb9a89079c0d2e4a880b22c447"
   },
   "animated_previews": {
+    "additional_temporal_trimming": false,
     "dither": "none",
     "files": [
       {
-        "bytes": 8286676,
-        "duration_seconds": 111.4,
+        "bytes": 5596097,
+        "duration_seconds": 45.51,
         "file": "media/fixed-mixture-stair-climb.gif",
-        "frames": 557,
+        "frames": 364,
         "loop": 0,
-        "sha256": "ff9e04a88bc627222c4cba916f66b2c527a0ddd6ddb81def3d3305ce7b44771a",
-        "source_mp4": "media/fixed-mixture-stair-climb.mp4",
-        "source_sha256": "63306e3e890406969c3aa4f74f599bfb2e4058a58348ab4998d1958a5f29ae77"
+        "public_policy": "Fixed-Mixture Policy",
+        "retained_earlier_full_video": "media/fixed-mixture-stair-climb.mp4",
+        "sha256": "2446d5369a72bf94ed5d60cccb54bbaba04b80c67e01c088dd99ad22451571ac",
+        "source_duration_seconds": 45.55,
+        "source_filename": "Screencast from 10-22-2026 04_52_08 PM.mp4",
+        "source_is_bundled": false,
+        "source_sha256": "049da84019373f73a65038d5bb711d5348ee4d728a1498ef55c7b1ee5c2aac69"
       },
       {
-        "bytes": 6841529,
-        "duration_seconds": 75.2,
+        "bytes": 6465924,
+        "duration_seconds": 45.01,
         "file": "media/pretrained-reference-stair-attempt.gif",
-        "frames": 376,
+        "frames": 360,
         "loop": 0,
-        "sha256": "bf35fb7334f766d41ac12d623a776a9a9d9856d2f19ce6eef60f6abc636aadda",
-        "source_mp4": "media/pretrained-reference-stair-attempt.mp4",
-        "source_sha256": "0e915b4d4d4e9afa568fa33e4f9f178b14fc76fdc1c671712203d773577d1b58"
+        "public_policy": "Pretrained Reference",
+        "retained_earlier_full_video": "media/pretrained-reference-stair-attempt.mp4",
+        "sha256": "c76e2a48c3c571e38382c845d736df356bcd1325eb3c97ff1cf5009295e01ad0",
+        "source_duration_seconds": 45.005,
+        "source_filename": "Screencast from 10-22-2026 05_00_04 PM.mp4",
+        "source_is_bundled": false,
+        "source_sha256": "d894f762d992cbf4cb56b294a5e28f9df4ebed6736fe63568894f09b763fd2c3"
       }
     ],
-    "filter": "fps=5,scale=400:-1:flags=lanczos; palettegen=max_colors=64:stats_mode=diff; paletteuse=dither=none",
+    "filter": "fps=8,scale=400:-1:flags=lanczos; palettegen=max_colors=64:stats_mode=diff; paletteuse=dither=none",
     "format": "GIF",
-    "frames_per_second": 5,
-    "height": 215,
+    "frames_per_second": 8,
+    "height": 214,
     "infinite_loop": true,
     "original_mp4_png_assets_unchanged": true,
     "palette_colors": 64,
     "readme_text_unchanged": true,
+    "source": "Newer author-supplied MP4 files; not the retained earlier full-length MP4s",
     "speed_changed": false,
     "whole_timeline": true,
     "width": 400
