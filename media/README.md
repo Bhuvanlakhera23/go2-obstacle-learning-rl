@@ -27,6 +27,11 @@ timeline at 30 fps; exact compressed frame bytes differ. Source metadata is
 stripped; neither source contains an audio stream. The PNG previews are actual
 frames extracted from the corresponding recordings, not generated illustrations.
 
+The README also displays looping GIF versions of the complete MP4 timelines at
+400 pixels wide and 5 fps. They play inline, without clicking, at the original
+speed (subject to GIF frame-delay rounding). No segment is selectively trimmed.
+The full-resolution MP4 links and original static previews remain available.
+
 Source/derived checksums, durations and conversion settings are recorded in
 [MEDIA_UPDATE.json](../MEDIA_UPDATE.json). The original
 [VERIFICATION.json](../VERIFICATION.json), scientific tables, figures, manuscript,

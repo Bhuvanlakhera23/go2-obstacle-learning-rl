@@ -1,10 +1,48 @@
 {
   "added_files": {
-    "media/README.md": "fe90f213c2943a34e13a06ad3bd8dc16bc2a1976ba9c024d34db0b5c7632df1f",
+    "media/README.md": "10e143e48ae0be4fac90d3362b333f745dd40a4ce2135145d66668c3d4c6bb4f",
+    "media/fixed-mixture-stair-climb.gif": "ff9e04a88bc627222c4cba916f66b2c527a0ddd6ddb81def3d3305ce7b44771a",
     "media/fixed-mixture-stair-climb.mp4": "63306e3e890406969c3aa4f74f599bfb2e4058a58348ab4998d1958a5f29ae77",
     "media/fixed-mixture-stair-climb.png": "ccb39d284c34bb01d200a81c5318bb26d86f32a968567c7d44439e1c405239f5",
+    "media/pretrained-reference-stair-attempt.gif": "bf35fb7334f766d41ac12d623a776a9a9d9856d2f19ce6eef60f6abc636aadda",
     "media/pretrained-reference-stair-attempt.mp4": "0e915b4d4d4e9afa568fa33e4f9f178b14fc76fdc1c671712203d773577d1b58",
     "media/pretrained-reference-stair-attempt.png": "a25091adeddc8ac9294e41f22e32c9193822efcb9a89079c0d2e4a880b22c447"
+  },
+  "animated_previews": {
+    "dither": "none",
+    "files": [
+      {
+        "bytes": 8286676,
+        "duration_seconds": 111.4,
+        "file": "media/fixed-mixture-stair-climb.gif",
+        "frames": 557,
+        "loop": 0,
+        "sha256": "ff9e04a88bc627222c4cba916f66b2c527a0ddd6ddb81def3d3305ce7b44771a",
+        "source_mp4": "media/fixed-mixture-stair-climb.mp4",
+        "source_sha256": "63306e3e890406969c3aa4f74f599bfb2e4058a58348ab4998d1958a5f29ae77"
+      },
+      {
+        "bytes": 6841529,
+        "duration_seconds": 75.2,
+        "file": "media/pretrained-reference-stair-attempt.gif",
+        "frames": 376,
+        "loop": 0,
+        "sha256": "bf35fb7334f766d41ac12d623a776a9a9d9856d2f19ce6eef60f6abc636aadda",
+        "source_mp4": "media/pretrained-reference-stair-attempt.mp4",
+        "source_sha256": "0e915b4d4d4e9afa568fa33e4f9f178b14fc76fdc1c671712203d773577d1b58"
+      }
+    ],
+    "filter": "fps=5,scale=400:-1:flags=lanczos; palettegen=max_colors=64:stats_mode=diff; paletteuse=dither=none",
+    "format": "GIF",
+    "frames_per_second": 5,
+    "height": 215,
+    "infinite_loop": true,
+    "original_mp4_png_assets_unchanged": true,
+    "palette_colors": 64,
+    "readme_text_unchanged": true,
+    "speed_changed": false,
+    "whole_timeline": true,
+    "width": 400
   },
   "base_commit": "60ddb4a57325650add5f28d4a5be6d52ef415b7a",
   "base_tag": "v1.1.0",
@@ -27,7 +65,7 @@
   "overrides": {
     "README.md": {
       "base_sha256": "51edfd5c4e53ebaa7db5dca91811b133b3ba8ab12313fba2e69f797fca12ef84",
-      "sha256": "26b9e5cc373ef46009e85633e27f5566756c381feb199e0fdcfa145315334515"
+      "sha256": "7ad8d3328d581eb257b47cf41c67335b70906f042ddabb624285960ac59491b7"
     },
     "scripts/verify_public.py": {
       "base_sha256": "09afbe9c103cf683b76ae6925809dec1efe9a3b1b20a0f8cace697506ae324fb",

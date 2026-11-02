@@ -22,7 +22,7 @@ Click a preview to watch the full recording. The authors identify the setup as
 
 | Fixed-Mixture Policy | Pretrained Reference (historical) |
 |---|---|
-| [![Fixed-Mixture Policy stair-climbing demonstration](media/fixed-mixture-stair-climb.png)](media/fixed-mixture-stair-climb.mp4) | [![Pretrained Reference stair-climbing attempt](media/pretrained-reference-stair-attempt.png)](media/pretrained-reference-stair-attempt.mp4) |
+| [![Fixed-Mixture Policy stair-climbing demonstration](media/fixed-mixture-stair-climb.gif)](media/fixed-mixture-stair-climb.mp4) | [![Pretrained Reference stair-climbing attempt](media/pretrained-reference-stair-attempt.gif)](media/pretrained-reference-stair-attempt.mp4) |
 | [Watch the climbing demonstration](media/fixed-mixture-stair-climb.mp4) | [Watch the unsuccessful attempt](media/pretrained-reference-stair-attempt.mp4) |
 
 These selected, manually recorded simulation clips are **qualitative
