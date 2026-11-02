@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "Please cite the technical report using preferred-citation. Included plotting code is supporting material, not a separate software DOI."
+title: "Experience Allocation and Acquisition–Retention Trade-offs in Blind Quadruped Obstacle Learning"
+authors:
+  - family-names: Lakhera
+    given-names: Bhuvan
+    affiliation: "ARK Foundation Robotics Lab, Plaksha University, India."
+  - family-names: Muthirayan
+    given-names: Deepan
+    affiliation: "ARK Foundation Robotics Lab, Plaksha University, India."
+version: 1.1.0
+license:
+  - CC-BY-4.0
+  - MIT
+repository-code: "https://github.com/Bhuvanlakhera23/quadruped-experience-allocation"
+url: "https://github.com/Bhuvanlakhera23/quadruped-experience-allocation"
+preferred-citation:
+  type: report
+  title: "Experience Allocation and Acquisition–Retention Trade-offs in Blind Quadruped Obstacle Learning"
+  authors:
+    - family-names: Lakhera
+      given-names: Bhuvan
+      affiliation: "ARK Foundation Robotics Lab, Plaksha University, India."
+    - family-names: Muthirayan
+      given-names: Deepan
+      affiliation: "ARK Foundation Robotics Lab, Plaksha University, India."
+  year: 2026
+  version: 1.1.0
+  url: "https://github.com/Bhuvanlakhera23/quadruped-experience-allocation/releases/tag/v1.1.0"
+  notes: "Technical report; not a peer-reviewed conference publication. No DOI assigned."

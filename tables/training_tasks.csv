@@ -1,0 +1,24 @@
+task_id,name,family,height,risers,tread,landing,approach,yaw,command,completion,retention,surface
+0,ordinary_forward,ordinary,0.0,0,0.35,1.8,0.8,0.0,"[0.5, 0.0, 0.0]",walk_through,True,flat
+1,ordinary_backward,ordinary,0.0,0,0.35,1.8,0.8,0.0,"[-0.5, 0.0, 0.0]",walk_through,True,flat
+2,ordinary_left,ordinary,0.0,0,0.35,1.8,0.8,0.0,"[0.0, 0.25, 0.0]",walk_through,True,flat
+3,ordinary_right,ordinary,0.0,0,0.35,1.8,0.8,0.0,"[0.0, -0.25, 0.0]",walk_through,True,flat
+4,ordinary_yaw_positive,ordinary,0.0,0,0.35,1.8,0.8,0.0,"[0.0, 0.0, 0.5]",walk_through,True,flat
+5,ordinary_yaw_negative,ordinary,0.0,0,0.35,1.8,0.8,0.0,"[0.0, 0.0, -0.5]",walk_through,True,flat
+6,ordinary_stand,ordinary,0.0,0,0.35,1.8,0.8,0.0,"[0.0, 0.0, 0.0]",walk_through,True,flat
+7,staircase_06,staircase,0.06,3,0.35,1.8,0.8,0.0,"[0.25, 0.0, 0.0]",walk_through,False,flat
+8,staircase_09,staircase,0.09,3,0.35,1.8,0.8,0.0,"[0.25, 0.0, 0.0]",walk_through,False,flat
+9,staircase_12,staircase,0.12,3,0.35,1.8,0.8,0.0,"[0.25, 0.0, 0.0]",walk_through,False,flat
+10,staircase_15,staircase,0.15,3,0.35,1.8,0.8,0.0,"[0.25, 0.0, 0.0]",walk_through,False,flat
+11,staircase_18,staircase,0.18,3,0.35,1.8,0.8,0.0,"[0.25, 0.0, 0.0]",walk_through,False,flat
+12,isolated_06,isolated,0.06,1,0.35,1.8,0.8,0.0,"[0.25, 0.0, 0.0]",walk_through,False,flat
+13,isolated_09,isolated,0.09,1,0.35,1.8,0.8,0.0,"[0.25, 0.0, 0.0]",walk_through,False,flat
+14,isolated_12,isolated,0.12,1,0.35,1.8,0.8,0.0,"[0.25, 0.0, 0.0]",walk_through,False,flat
+15,isolated_15,isolated,0.15,1,0.35,1.8,0.8,0.0,"[0.25, 0.0, 0.0]",walk_through,False,flat
+16,isolated_18,isolated,0.18,1,0.35,1.8,0.8,0.0,"[0.25, 0.0, 0.0]",walk_through,False,flat
+17,descent_12,descent,0.12,1,0.35,1.8,0.8,0.0,"[0.25, 0.0, 0.0]",walk_through,True,flat
+18,descent_15,descent,0.15,1,0.35,1.8,0.8,0.0,"[0.25, 0.0, 0.0]",walk_through,True,flat
+19,descent_18,descent,0.18,1,0.35,1.8,0.8,0.0,"[0.25, 0.0, 0.0]",walk_through,True,flat
+20,native_descent_12,native_descent,0.12,7,0.3,0.85,1.2,0.0,"[0.25, 0.0, 0.0]",walk_through,True,flat
+21,native_ascent_09,native_ascent,0.09,7,0.3,0.85,1.2,0.0,"[0.25, 0.0, 0.0]",walk_through,False,flat
+22,native_ascent_12,native_ascent,0.12,7,0.3,0.85,1.2,0.0,"[0.25, 0.0, 0.0]",walk_through,False,flat

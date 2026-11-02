@@ -1,0 +1,19 @@
+policy,suite,evaluation_seed,n,detector_defined_completion,source
+Pretrained Reference,nominal,173,64,1,B/eval_model5099_nominal_173/results.json
+Pretrained Reference,nominal,271,64,0,B/eval_model5099_nominal_271/results.json
+Pretrained Reference,slippery,173,64,0,B/eval_model5099_slippery_173/results.json
+Pretrained Reference,slippery,271,64,0,B/eval_model5099_slippery_271/results.json
+Pretrained Reference,disturbance,173,64,2,B/eval_model5099_disturbance_173/results.json
+Pretrained Reference,disturbance,271,64,1,B/eval_model5099_disturbance_271/results.json
+Fixed-Mixture Policy,nominal,173,64,59,B/eval_fixed_nominal_173/results.json
+Fixed-Mixture Policy,nominal,271,64,58,B/eval_fixed_nominal_271/results.json
+Fixed-Mixture Policy,slippery,173,64,42,B/eval_fixed_slippery_173/results.json
+Fixed-Mixture Policy,slippery,271,64,44,B/eval_fixed_slippery_271/results.json
+Fixed-Mixture Policy,disturbance,173,64,57,B/eval_fixed_disturbance_173/results.json
+Fixed-Mixture Policy,disturbance,271,64,61,B/eval_fixed_disturbance_271/results.json
+Adaptive-Frontier Policy,nominal,173,64,25,B/eval_adaptive_nominal_173/results.json
+Adaptive-Frontier Policy,nominal,271,64,22,B/eval_adaptive_nominal_271/results.json
+Adaptive-Frontier Policy,slippery,173,64,3,B/eval_adaptive_slippery_173/results.json
+Adaptive-Frontier Policy,slippery,271,64,5,B/eval_adaptive_slippery_271/results.json
+Adaptive-Frontier Policy,disturbance,173,64,22,B/eval_adaptive_disturbance_173/results.json
+Adaptive-Frontier Policy,disturbance,271,64,20,B/eval_adaptive_disturbance_271/results.json

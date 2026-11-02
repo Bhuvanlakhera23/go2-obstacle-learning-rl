@@ -1,0 +1,74 @@
+[
+  {
+    "id": "01_high_completion",
+    "note": "Four fixtures; 128 assigned episodes/policy/suite. One training seed pair; evaluation seeds 173/271.",
+    "tables": [
+      "endpoint_cohorts.csv"
+    ],
+    "tables_sha256": {
+      "endpoint_cohorts.csv": "7aba53d44ee460f47d7380169da5e3f962af4e4027a89bef52066bc0f2e8903d"
+    },
+    "title": "Explicit 16/18 cm endpoint evaluation",
+    "uncertainty": "None: one training seed pair; no invented intervals or trajectories"
+  },
+  {
+    "id": "02_training_exposure",
+    "note": "One changing-policy training run per arm. Assignments and exposure time are not valid-contact encounter counts.",
+    "tables": [
+      "training_exposure.csv"
+    ],
+    "tables_sha256": {
+      "training_exposure.csv": "0fbde0449612c2a8a184fbaaf2dab89d812c42c33d63f03e0f5174e5b2c11c29"
+    },
+    "title": "Allocation to the two 18 cm training tasks",
+    "uncertainty": "None: one training seed pair; no invented intervals or trajectories"
+  },
+  {
+    "id": "03_allocation_probabilities",
+    "note": "62 periodic snapshots plus endpoint. Lines guide the eye; between-snapshot probabilities are not observed.",
+    "tables": [
+      "training_snapshot_history.csv"
+    ],
+    "tables_sha256": {
+      "training_snapshot_history.csv": "78820adc3d0a75ad9693d12652eec102db007292861106910ce453a65157c3a8"
+    },
+    "title": "Task probabilities at saved training snapshots",
+    "uncertainty": "None: one training seed pair; no invented intervals or trajectories"
+  },
+  {
+    "id": "04_training_outcomes",
+    "note": "Cumulative training counts, not endpoint rates or independently evaluated learning curves. Missing first-foothold events are not inferred.",
+    "tables": [
+      "training_snapshot_history.csv"
+    ],
+    "tables_sha256": {
+      "training_snapshot_history.csv": "78820adc3d0a75ad9693d12652eec102db007292861106910ce453a65157c3a8"
+    },
+    "title": "Training outcomes under changing allocation and policy",
+    "uncertainty": "None: one training seed pair; no invented intervals or trajectories"
+  },
+  {
+    "id": "05_acquisition_retention",
+    "note": "416 ordinary episodes/policy/suite. Pretrained Reference is not an equal-budget control. Action proxy is not energy or hardware wear.",
+    "tables": [
+      "endpoint_cohorts.csv"
+    ],
+    "tables_sha256": {
+      "endpoint_cohorts.csv": "7aba53d44ee460f47d7380169da5e3f962af4e4027a89bef52066bc0f2e8903d"
+    },
+    "title": "Acquisition and retention: descriptive, not a causal frontier",
+    "uncertainty": "None: one training seed pair; no invented intervals or trajectories"
+  },
+  {
+    "id": "06_fixture_counterexamples",
+    "note": "32 episodes/fixture/policy/suite. Orange outline: adaptive exceeds fixed. Both native fixtures have 10.5 cm risers.",
+    "tables": [
+      "per_fixture.csv"
+    ],
+    "tables_sha256": {
+      "per_fixture.csv": "381997f875959ccd48cd09cd2b970bcaed14ecddfc6399e5af8c7abeae9802cd"
+    },
+    "title": "Per-fixture endpoint evaluation, including counterexamples",
+    "uncertainty": "None: one training seed pair; no invented intervals or trajectories"
+  }
+]

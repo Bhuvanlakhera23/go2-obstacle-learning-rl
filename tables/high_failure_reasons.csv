@@ -1,0 +1,10 @@
+policy,suite,n,detector_defined_completion,stuck,corridor_or_tile,collision,fall,timeout,source
+Pretrained Reference,nominal,128,1,71,45,10,1,0,"B/eval_model5099_nominal_{173,271}/results.json; terminal reason codes"
+Pretrained Reference,slippery,128,0,87,34,3,3,1,"B/eval_model5099_slippery_{173,271}/results.json; terminal reason codes"
+Pretrained Reference,disturbance,128,3,62,57,4,2,0,"B/eval_model5099_disturbance_{173,271}/results.json; terminal reason codes"
+Fixed-Mixture Policy,nominal,128,117,2,3,3,1,2,"B/eval_fixed_nominal_{173,271}/results.json; terminal reason codes"
+Fixed-Mixture Policy,slippery,128,86,8,16,7,6,5,"B/eval_fixed_slippery_{173,271}/results.json; terminal reason codes"
+Fixed-Mixture Policy,disturbance,128,118,3,3,3,0,1,"B/eval_fixed_disturbance_{173,271}/results.json; terminal reason codes"
+Adaptive-Frontier Policy,nominal,128,47,51,5,2,13,10,"B/eval_adaptive_nominal_{173,271}/results.json; terminal reason codes"
+Adaptive-Frontier Policy,slippery,128,8,48,37,21,2,12,"B/eval_adaptive_slippery_{173,271}/results.json; terminal reason codes"
+Adaptive-Frontier Policy,disturbance,128,42,55,10,4,11,6,"B/eval_adaptive_disturbance_{173,271}/results.json; terminal reason codes"

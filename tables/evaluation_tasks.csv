@@ -1,0 +1,25 @@
+task_id,name,family,height,risers,tread,landing,approach,yaw,command,completion,retention,surface
+0,heldout_isolated_10,isolated,0.1,1,0.4,2.0,1.0,0.12,"[0.25, 0.0, 0.0]",walk_through,False,flat
+1,heldout_isolated_13,isolated,0.13,1,0.4,2.0,1.0,0.12,"[0.25, 0.0, 0.0]",walk_through,False,flat
+2,heldout_isolated_16,isolated,0.16,1,0.4,2.0,1.0,0.12,"[0.25, 0.0, 0.0]",walk_through,False,flat
+3,heldout_isolated_18,isolated,0.18,1,0.4,2.0,1.0,0.12,"[0.25, 0.0, 0.0]",walk_through,False,flat
+4,heldout_staircase_10,staircase,0.1,3,0.4,2.0,1.0,0.12,"[0.25, 0.0, 0.0]",walk_through,False,flat
+5,heldout_staircase_13,staircase,0.13,3,0.4,2.0,1.0,0.12,"[0.25, 0.0, 0.0]",walk_through,False,flat
+6,heldout_staircase_16,staircase,0.16,3,0.4,2.0,1.0,0.12,"[0.25, 0.0, 0.0]",walk_through,False,flat
+7,heldout_staircase_18,staircase,0.18,3,0.4,2.0,1.0,0.12,"[0.25, 0.0, 0.0]",walk_through,False,flat
+8,heldout_descent_16,descent,0.16,1,0.4,2.0,1.0,-0.12,"[0.25, 0.0, 0.0]",walk_through,True,flat
+9,heldout_native_descent,native_descent,0.105,7,0.3,0.85,1.2,0.0,"[0.25, 0.0, 0.0]",walk_through,True,flat
+10,heldout_native_ascent,native_ascent,0.105,7,0.3,0.85,1.2,0.0,"[0.25, 0.0, 0.0]",walk_through,False,flat
+11,heldout_ordinary_forward,ordinary,0.0,0,0.35,1.8,0.8,0.0,"[0.5, 0.0, 0.0]",walk_through,True,flat
+12,heldout_ordinary_backward,ordinary,0.0,0,0.35,1.8,0.8,0.0,"[-0.5, 0.0, 0.0]",walk_through,True,flat
+13,heldout_ordinary_left,ordinary,0.0,0,0.35,1.8,0.8,0.0,"[0.0, 0.25, 0.0]",walk_through,True,flat
+14,heldout_ordinary_right,ordinary,0.0,0,0.35,1.8,0.8,0.0,"[0.0, -0.25, 0.0]",walk_through,True,flat
+15,heldout_ordinary_yaw_positive,ordinary,0.0,0,0.35,1.8,0.8,0.0,"[0.0, 0.0, 0.5]",walk_through,True,flat
+16,heldout_ordinary_yaw_negative,ordinary,0.0,0,0.35,1.8,0.8,0.0,"[0.0, 0.0, -0.5]",walk_through,True,flat
+17,heldout_ordinary_stand,ordinary,0.0,0,0.35,1.8,0.8,0.0,"[0.0, 0.0, 0.0]",walk_through,True,flat
+18,heldout_rough_-1,ordinary,0.0,0,0.35,1.8,0.8,0.0,"[-0.5, 0.0, 0.0]",walk_through,True,rough
+19,heldout_rough_+1,ordinary,0.0,0,0.35,1.8,0.8,0.0,"[0.5, 0.0, 0.0]",walk_through,True,rough
+20,heldout_slope_descending_-1,ordinary,0.0,0,0.35,1.8,0.8,0.0,"[-0.5, 0.0, 0.0]",walk_through,True,slope_descending
+21,heldout_slope_descending_+1,ordinary,0.0,0,0.35,1.8,0.8,0.0,"[0.5, 0.0, 0.0]",walk_through,True,slope_descending
+22,heldout_slope_ascending_-1,ordinary,0.0,0,0.35,1.8,0.8,0.0,"[-0.5, 0.0, 0.0]",walk_through,True,slope_ascending
+23,heldout_slope_ascending_+1,ordinary,0.0,0,0.35,1.8,0.8,0.0,"[0.5, 0.0, 0.0]",walk_through,True,slope_ascending
