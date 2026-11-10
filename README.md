@@ -10,6 +10,10 @@ then measuring climbing and ordinary locomotion together.
 
 ## Principal result
 
+<img src="figures/01_high_completion.png" width="900" alt="Historical nominal 16–18 cm completions: fixed mixture 117/128, adaptive frontier 47/128, pretrained reference 1/128">
+
+*Original detector-defined completion comparison. The two continuation arms share a training budget; the historical pretrained reference is not an equal-budget control.*
+
 | Historical nominal 16–18 cm evaluation | Detector-defined completions |
 |---|---:|
 | Fixed-Mixture Policy | **117/128 · 91.4%** |
