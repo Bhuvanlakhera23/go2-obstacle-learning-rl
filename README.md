@@ -1,100 +1,104 @@
-# Go2 Learns to Climb
+# Experience Allocation and Acquisition–Retention Trade-offs in Blind Quadruped Obstacle Learning
 
-**Technical report:** Experience Allocation and Acquisition–Retention Trade-offs in Blind Quadruped Obstacle Learning
+**Bhuvan Lakhera and Deepan Muthirayan**
+Technical report · v1.1.0 · 2026
 
-### A Single-Seed Quadruped Reinforcement Learning Simulation Study
+**Why does one blind locomotion policy acquire difficult obstacle skills while
+another struggles under the same training budget?** We studied this by changing
+how training experience was allocated across a shared set of locomotion tasks,
+then measuring climbing and ordinary locomotion together.
 
-**Bhuvan Lakhera and Deepan Muthirayan**  
-ARK Foundation Robotics Lab, Plaksha University, India.
+## Principal result
 
-Technical report V1.1 · version `v1.1.0` · Not a peer-reviewed conference publication.
-
-[Go2 RL Locomotion — visual engineering showcase](https://github.com/Bhuvanlakhera23/go2-rl-locomotion)
-
-## Research question
-
-**How does finite training-experience allocation affect obstacle acquisition and
-ordinary-locomotion retention in a blind Go2 policy?**
-
-A blind quadruped may spend a large training budget without acquiring difficult
-obstacle skills. This development study compares a fixed retention/ascent mixture
-with one specified competence-frontier sampler over the same task bank. Both
-trained policies start from the same prior, use the same reward and receive
-131,072,000 environment transitions. There is **one matched training-seed pair**.
-
-## Illustrative stair-climbing videos
-
-The configured step height in these simulation demonstrations is **28 cm**.
-The GIFs play inline; click a preview to watch the full recording.
-
-| Fixed-Mixture Policy | Pretrained Reference (historical) |
-|---|---|
-| [![Fixed-Mixture Policy stair-climbing demonstration](media/fixed-mixture-stair-climb.gif)](media/fixed-mixture-stair-climb.mp4) | [![Pretrained Reference stair-climbing attempt](media/pretrained-reference-stair-attempt.gif)](media/pretrained-reference-stair-attempt.mp4) |
-| [Watch the climbing demonstration](media/fixed-mixture-stair-climb.mp4) | [Watch the unsuccessful attempt](media/pretrained-reference-stair-attempt.mp4) |
-
-These selected, manually recorded simulation clips are **qualitative
-illustrations**, not additional benchmark episodes, a measured 28 cm capability
-envelope or a matched evaluation. They do not establish independent contact
-ground truth or multi-seed reliability. The quantitative report below remains
-the original explicit **16–18 cm** evaluation. See [video provenance](media/README.md).
-The frozen `v1.1.0` release and its experimental records are unchanged. These
-media additions and the current presentation were added later on `main`; see
-[layout and release history](docs/LAYOUT_HISTORY.md).
-
-## Principal findings
-
-| Policy | Nominal explicit 16–18 cm detector-defined completions |
+| Historical nominal 16–18 cm evaluation | Detector-defined completions |
 |---|---:|
-| Fixed-Mixture Policy | **117/128** |
-| Adaptive-Frontier Policy | **47/128** |
-| Pretrained Reference (historical; not an equal-budget control) | **1/128** |
+| Fixed-Mixture Policy | **117/128 · 91.4%** |
+| Adaptive-Frontier Policy | **47/128 · 36.7%** |
+| Pretrained Reference | **1/128 · 0.8%** |
 
-The fixed run received approximately 13.1× as many assignments and 17.1× as much
-environment-time on the two hardest explicit training tasks. This association
-does not isolate a causal mediator. Acquisition gains coexist with ordinary
-locomotion costs, and adaptive-over-fixed counterexamples remain in the report.
+The fixed policy completed **31/32 isolated 18 cm steps** and **25/32 three-riser
+18 cm staircases**. This is one matched training-seed pair, evaluated with two
+seeds. The pretrained reference is historical, not an equal-budget control.
 
-## Read and reproduce
+## What we compared
+
+Both continuations started from the same prior, used the same task bank and reward,
+and received **131,072,000 environment transitions**. One used a fixed
+retention/ascent mixture; the other used a specified competence-frontier adaptive
+sampler. The comparison tests that allocation choice in this setting, not a new
+curriculum algorithm or a universal ranking of fixed and adaptive sampling.
+
+The fixed run received approximately **13.1× as many assignments** and **17.1× as
+much environment-time** on the two hardest explicit training tasks. This difference
+accompanied better acquisition, but the experiment does not isolate exposure as
+the cause. The report retains task-level cases where adaptive sampling did better.
+
+## Acquisition came with retention costs
+
+Climbing completions alone did not describe the policy. On nominal ordinary tasks,
+all three policies reached the horizon in 416/416 episodes, yet their tracking and
+motion costs differed:
+
+| Ordinary-task episode means | Historical reference | Fixed mixture | Adaptive frontier |
+|---|---:|---:|---:|
+| Forward-velocity absolute error (m/s) | 0.04445 | 0.04824 | 0.05257 |
+| Mean squared raw action increment | 0.11027 | 0.13066 | 0.11859 |
+| Mean squared applied torque (Nm²) | 21.61225 | 22.58649 | 19.05370 |
+
+The fixed policy's action-change proxy was about 18.5% above the reference, while
+slippery-terrain retention also exposed costs. Squared torque and raw action
+increments are simulation proxies, not measured energy or hardware wear.
+The lesson is to examine acquisition and retention together; more difficult
+exposure is useful only if the policy learns the task.
+
+## Watch the behavior
+
+| Fixed-policy stair playback | Historical-reference attempt |
+|---|---|
+| [![Fixed-policy stair playback in simulation](media/fixed-mixture-stair-climb.gif)](media/fixed-mixture-stair-climb.mp4) | [![Historical reference attempting stairs in simulation](media/pretrained-reference-stair-attempt.gif)](media/pretrained-reference-stair-attempt.mp4) |
+
+Click a preview for the full recording. The configured 28 cm scenes are qualitative
+illustrations, not extra benchmark episodes or matched video trials. The measured
+comparison above remains the original 16–18 cm evaluation.
+[Recording context](media/README.md).
+
+## Read the report and verify the published analysis
 
 - [Complete technical report](TECHNICAL_REPORT.md).
-- [CPU-only reproduction instructions](docs/REPRODUCIBILITY.md).
-- [Policy/checkpoint identity mapping](docs/POLICY_IDENTITY_MAPPING.md).
-- [Numerical invariance](docs/NUMERICAL_VERIFICATION.md), [provenance](docs/NUMERICAL_PROVENANCE.md)
-  and [checksum/integrity receipt](VERIFICATION.json).
-- [Related work](docs/RELATED_WORK_VERIFICATION.md), [BibTeX references](references.bib),
-  [claims and limitations](docs/CLAIM_EVIDENCE_LIMITATIONS.md), [missing evidence](docs/MISSING_EVIDENCE.md).
+- [Reader's guide and CPU analysis checks](docs/READING_GUIDE.md).
+- [Original per-task results and figures](#figures).
+- [Policy identities](docs/POLICY_IDENTITY_MAPPING.md) and [related work](references.bib).
 
-| Figure | SVG | PNG |
-|---|---|---|
-| High-obstacle completion | [Vector](figures/01_high_completion.svg) | [Preview](figures/01_high_completion.png) |
-| Training-task exposure | [Vector](figures/02_training_exposure.svg) | [Preview](figures/02_training_exposure.png) |
-| Allocation probabilities | [Vector](figures/03_allocation_probabilities.svg) | [Preview](figures/03_allocation_probabilities.png) |
-| Cumulative training outcomes | [Vector](figures/04_training_outcomes.svg) | [Preview](figures/04_training_outcomes.png) |
-| Acquisition–retention | [Vector](figures/05_acquisition_retention.svg) | [Preview](figures/05_acquisition_retention.png) |
-| Per-fixture counterexamples | [Vector](figures/06_fixture_counterexamples.svg) | [Preview](figures/06_fixture_counterexamples.png) |
+The included tools regenerate figures and check the published numerical assets.
+They do not reproduce PPO training, run a policy or launch a simulator. The
+[engineering showcase](https://github.com/Bhuvanlakhera23/go2-rl-locomotion)
+describes the wider locomotion pipeline and physical robot work.
 
-## Scope and limitations
+## Figures
 
-Completion is detector-defined, **not independently validated physical traversal**.
-There is no qualified independent contact or visual ground truth, no completed
-reward-OFF ablation, no hardware-transfer result and no multi-training-seed
-reliability claim. This does not disprove adaptive curricula or establish a new
-curriculum algorithm. Evaluation episodes are not independent training seeds.
-Ordinary squared raw-action change and squared torque are proxies, not mechanical
-energy or measured hardware wear.
+| Question | Figure |
+|---|---|
+| Which obstacles were completed? | [High-obstacle completion](figures/01_high_completion.png) |
+| Which tasks received training time? | [Training-task exposure](figures/02_training_exposure.png) |
+| How did allocation change? | [Sampling probabilities](figures/03_allocation_probabilities.png) |
+| What accumulated during training? | [Training outcomes](figures/04_training_outcomes.png) |
+| What happened to ordinary locomotion? | [Acquisition–retention](figures/05_acquisition_retention.png) |
+| Where did the aggregate ranking reverse? | [Per-fixture counterexamples](figures/06_fixture_counterexamples.png) |
 
-## Citation
+## Scope and citation
 
-Bhuvan Lakhera and Deepan Muthirayan (2026). *Experience Allocation and
-Acquisition–Retention Trade-offs in Blind Quadruped Obstacle Learning.* Technical
-Report V1.1. See [CITATION.cff](CITATION.cff). No DOI is assigned here. A separately
-published Zenodo technical-report DOI may be added later without changing any
-experimental record; automatic GitHub software archiving is not used.
+Completion uses the original supported-traversal detector; independent contact
+or visual ground truth was not established. One continuation-training seed cannot
+estimate learning reliability across seeds. The study includes no completed
+reward-OFF ablation or hardware-transfer evaluation. The full report explains
+these limits and the original evaluation contract.
 
-## Licensing and exclusions
+**Bhuvan Lakhera and Deepan Muthirayan (2026).** *Experience Allocation and
+Acquisition–Retention Trade-offs in Blind Quadruped Obstacle Learning.*
+Technical report v1.1.0; not a peer-reviewed conference publication.
+[Original release](https://github.com/Bhuvanlakhera23/go2-obstacle-learning-rl/releases/tag/v1.1.0) ·
+[CITATION.cff](CITATION.cff).
 
-© 2026 Bhuvan Lakhera and Deepan Muthirayan. Manuscript, figures and numerical
-tables: **CC BY 4.0**. Included plotting and verification code: **MIT**. See the
-[file-scoped license statement](LICENSE.md). Original checkpoints, simulator/
-experiment sources, robot assets, raw logs and internal approval evidence are
-excluded. No institutional ownership, extra coauthor, ORCID or email is inferred.
+The original report, figures, tables and release remain unchanged. Manuscript,
+figures and numerical tables retain **CC BY 4.0**; supporting plotting/verification
+code retains **MIT**. [File-scoped licensing](LICENSE.md).
