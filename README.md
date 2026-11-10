@@ -9,6 +9,8 @@ ARK Foundation Robotics Lab, Plaksha University, India.
 
 Technical report V1.1 · version `v1.1.0` · Not a peer-reviewed conference publication.
 
+[Go2 RL Locomotion — visual engineering showcase](https://github.com/Bhuvanlakhera23/go2-rl-locomotion)
+
 ## Research question
 
 **How does finite training-experience allocation affect obstacle acquisition and
