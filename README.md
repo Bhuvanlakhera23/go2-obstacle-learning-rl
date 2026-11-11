@@ -121,4 +121,5 @@ python -B -m unittest discover -s tests -v
 
 [Installation and figure command](docs/REPRODUCIBILITY.md) ·
 [Reduction rules and limits](docs/REDUCTION_RULES.md) ·
-[CPU workflow](.github/workflows/cpu-analysis.yml) (prepared; not yet run on GitHub).
+[CPU workflow](.github/workflows/cpu-analysis.yml) — [verified passing run](https://github.com/Bhuvanlakhera23/go2-obstacle-learning-rl/actions/runs/43008976023)
+on commit `26670a717132ab7b4e2e361b07e1f78091c00253`.

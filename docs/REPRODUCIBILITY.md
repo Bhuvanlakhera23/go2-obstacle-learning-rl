@@ -8,7 +8,7 @@ physics experiments or the private supported-traversal detector.
 
 Use Python 3.10–3.12 in a fresh environment. The recorded local run uses Python
 3.10, NumPy 1.21.5 and Matplotlib 3.5.1. The requirements include a separate
-3.11/3.12 plotting profile; it has not been run locally. CI is prepared for 3.10.
+3.11/3.12 plotting profile; it has not been run locally. The verified GitHub CI profile uses Python 3.10.
 
 ```bash
 python3 -m venv .venv
@@ -74,7 +74,10 @@ those receipts to make that old whole-tree check pass.
 The original renderer remains byte-preserved. It reads only packaged tables and
 writes a fresh directory with six PNG/SVG pairs and provenance. Cross-platform
 image-byte identity is not promised; source tables, units and labels are checked.
-The CPU CI workflow has not yet run on GitHub for this candidate.
+The [CPU CI run](https://github.com/Bhuvanlakhera23/go2-obstacle-learning-rl/actions/runs/43008976023)
+passed at commit `26670a717132ab7b4e2e361b07e1f78091c00253`, verifying
+the current integrity/reduction command and the 14-test CPU suite. This does not
+validate training or physics execution.
 
 The [identity appendix](POLICY_IDENTITY_MAPPING.md) retains original checkpoint
 and experiment identifiers; it grants no access to or rights over those files.
