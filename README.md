@@ -10,7 +10,7 @@ then measuring climbing and ordinary locomotion together.
 
 ## Principal result
 
-<img src="figures/01_high_completion.png" width="900" alt="Historical nominal 16–18 cm completions: fixed mixture 117/128, adaptive frontier 47/128, pretrained reference 1/128">
+<img src="figures/01_high_completion.png" width="900" alt="Historical nominal 16–18 cm completions: Fixed-Mixture Policy 117/128, Adaptive-Frontier Policy 47/128, Pretrained Reference 1/128">
 
 *Original detector-defined completion comparison. The two continuation arms share a training budget; the historical pretrained reference is not an equal-budget control.*
 
@@ -20,7 +20,7 @@ then measuring climbing and ordinary locomotion together.
 | Adaptive-Frontier Policy | **47/128 · 36.7%** |
 | Pretrained Reference | **1/128 · 0.8%** |
 
-The fixed policy completed **31/32 isolated 18 cm steps** and **25/32 three-riser
+A policy trained using a fixed task mixture completed **31/32 isolated 18 cm steps** and **25/32 three-riser
 18 cm staircases**. This is one matched training-seed pair, evaluated with two
 seeds. The pretrained reference is historical, not an equal-budget control.
 
@@ -43,13 +43,13 @@ Climbing completions alone did not describe the policy. On nominal ordinary task
 all three policies reached the horizon in 416/416 episodes, yet their tracking and
 motion costs differed:
 
-| Ordinary-task episode means | Historical reference | Fixed mixture | Adaptive frontier |
+| Ordinary-task episode means | Pretrained Reference | Fixed-Mixture Policy | Adaptive-Frontier Policy |
 |---|---:|---:|---:|
 | Forward-velocity absolute error (m/s) | 0.04445 | 0.04824 | 0.05257 |
 | Mean squared raw action increment | 0.11027 | 0.13066 | 0.11859 |
 | Mean squared applied torque (Nm²) | 21.61225 | 22.58649 | 19.05370 |
 
-The fixed policy's action-change proxy was about 18.5% above the reference, while
+The Fixed-Mixture Policy's action-change proxy was about 18.5% above the reference, while
 slippery-terrain retention also exposed costs. Squared torque and raw action
 increments are simulation proxies, not measured energy or hardware wear.
 The lesson is to examine acquisition and retention together; more difficult
@@ -57,9 +57,9 @@ exposure is useful only if the policy learns the task.
 
 ## Watch the behavior
 
-| Fixed-policy stair playback | Historical-reference attempt |
+| Blind high-obstacle locomotion policy · simulation | Historical-reference attempt |
 |---|---|
-| [![Fixed-policy stair playback in simulation](media/fixed-mixture-stair-climb.gif)](media/fixed-mixture-stair-climb.mp4) | [![Historical reference attempting stairs in simulation](media/pretrained-reference-stair-attempt.gif)](media/pretrained-reference-stair-attempt.mp4) |
+| [![Blind high-obstacle locomotion policy climbing stairs in simulation](media/fixed-mixture-stair-climb.gif)](media/fixed-mixture-stair-climb.mp4) | [![Historical reference attempting stairs in simulation](media/pretrained-reference-stair-attempt.gif)](media/pretrained-reference-stair-attempt.mp4) |
 
 Click a preview for the full recording. The configured 28 cm scenes are qualitative
 illustrations, not extra benchmark episodes or matched video trials. The measured
