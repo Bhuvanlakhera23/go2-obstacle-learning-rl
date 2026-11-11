@@ -1,0 +1,5 @@
+# Tested CPU plotting profile; verification/reduction/tests otherwise use stdlib.
+numpy==1.21.5; python_version < "3.11"
+numpy==1.26.4; python_version >= "3.11"
+matplotlib==3.5.1; python_version < "3.11"
+matplotlib==3.8.4; python_version >= "3.11"

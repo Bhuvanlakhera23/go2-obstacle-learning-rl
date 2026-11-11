@@ -23,3 +23,7 @@ Attribution for report material: Bhuvan Lakhera and Deepan Muthirayan,
 Obstacle Learning*, Technical Report V1.1. Identify modifications when reusing
 CC BY 4.0 material. The approved authorship/licensing came from the authors'
 explicit release instructions; the original RC1 approval records remain unchanged.
+
+V4 additions: `tests/*.py` use the same MIT scope as `scripts/*.py`; the CPU
+workflow and requirements are reproducibility metadata under the documentation
+scope. No private research implementation is included by these additions.

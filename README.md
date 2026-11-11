@@ -106,3 +106,19 @@ Technical report v1.1.0; not a peer-reviewed conference publication.
 The original report, figures, tables and release remain unchanged. Manuscript,
 figures and numerical tables retain **CC BY 4.0**; supporting plotting/verification
 code retains **MIT**. [File-scoped licensing](LICENSE.md).
+
+## Inspect and reproduce the analysis
+
+The public [record reducer](scripts/reduce_records.py),
+[current verifier](scripts/verify_current.py) and [tests](tests/test_analysis.py)
+reconstruct detector-label aggregates and check the unchanged scientific assets.
+They reproduce analysis and figures, not PPO training or physical-contact truth.
+
+```bash
+python -B scripts/verify_current.py
+python -B -m unittest discover -s tests -v
+```
+
+[Installation and figure command](docs/REPRODUCIBILITY.md) ·
+[Reduction rules and limits](docs/REDUCTION_RULES.md) ·
+[CPU workflow](.github/workflows/cpu-analysis.yml) (prepared; not yet run on GitHub).

@@ -23,34 +23,17 @@ bytes even when the data agree. See the original
 
 ## Verify the unchanged scientific assets
 
-From the repository root, this standard-library check compares the report,
-tables, figures and references with the existing public layout receipt:
+From the repository root:
 
 ```bash
-python3 -B - <<'PY'
-import hashlib
-import json
-from pathlib import Path
-root = Path('.')
-receipt = json.loads((root / 'provenance/LAYOUT_VERIFICATION_V1.json').read_text())
-selected = {
-    path: expected for path, expected in receipt['files_sha256'].items()
-    if path.startswith(('tables/', 'figures/'))
-    or path in {'TECHNICAL_REPORT.md', 'references.bib'}
-}
-assert selected, 'No scientific assets selected'
-mismatches = [path for path, expected in selected.items()
-              if not (root / path).is_file()
-              or hashlib.sha256((root / path).read_bytes()).hexdigest() != expected]
-assert not mismatches, mismatches
-print(f'{len(selected)} scientific assets match the recorded hashes.')
-PY
+python3 -B scripts/verify_current.py
+python3 -B -m unittest discover -s tests -v
 ```
 
-The original whole-repository inventory checker and receipts describe earlier
-presentation snapshots. They remain unchanged; later README/citation edits are
-outside those byte inventories. The check above targets the scientific assets
-without rewriting the historical receipts.
+The supported verifier checks scientific hashes and reconstructs 639 summary rows
+from the public terminal records. See [setup and scope](REPRODUCIBILITY.md) and
+[reduction rules](REDUCTION_RULES.md). Historical whole-tree receipts and their
+checker remain unchanged; they describe earlier presentation snapshots.
 
 ## Reading the results
 
